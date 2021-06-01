@@ -1,7 +1,7 @@
 ﻿
 namespace Contact_Tracing_App
 {
-    partial class Form1
+    partial class ContactTracing
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace Contact_Tracing_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactTracing));
             this.txtBoxFirstName = new System.Windows.Forms.TextBox();
             this.txtBoxLastName = new System.Windows.Forms.TextBox();
             this.txtBoxMidName = new System.Windows.Forms.TextBox();
@@ -250,9 +250,9 @@ namespace Contact_Tracing_App
             // 
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
@@ -356,7 +356,7 @@ namespace Contact_Tracing_App
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(143, 2);
+            this.label10.Location = new System.Drawing.Point(159, 2);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(27, 15);
             this.label10.TabIndex = 7;
@@ -366,7 +366,7 @@ namespace Contact_Tracing_App
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(179, 2);
+            this.label11.Location = new System.Drawing.Point(199, 2);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(25, 15);
             this.label11.TabIndex = 8;
@@ -375,7 +375,7 @@ namespace Contact_Tracing_App
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(143, 28);
+            this.checkBox1.Location = new System.Drawing.Point(159, 28);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 9;
@@ -384,7 +384,7 @@ namespace Contact_Tracing_App
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(179, 28);
+            this.checkBox2.Location = new System.Drawing.Point(199, 28);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(15, 14);
             this.checkBox2.TabIndex = 10;
@@ -393,7 +393,7 @@ namespace Contact_Tracing_App
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(143, 51);
+            this.checkBox3.Location = new System.Drawing.Point(159, 51);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(15, 14);
             this.checkBox3.TabIndex = 11;
@@ -402,7 +402,7 @@ namespace Contact_Tracing_App
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(179, 51);
+            this.checkBox4.Location = new System.Drawing.Point(199, 51);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(15, 14);
             this.checkBox4.TabIndex = 12;
@@ -411,7 +411,7 @@ namespace Contact_Tracing_App
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(143, 74);
+            this.checkBox5.Location = new System.Drawing.Point(159, 74);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(15, 14);
             this.checkBox5.TabIndex = 13;
@@ -420,7 +420,7 @@ namespace Contact_Tracing_App
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(179, 74);
+            this.checkBox6.Location = new System.Drawing.Point(199, 74);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(15, 14);
             this.checkBox6.TabIndex = 14;
@@ -429,7 +429,7 @@ namespace Contact_Tracing_App
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(143, 97);
+            this.checkBox7.Location = new System.Drawing.Point(159, 97);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(15, 14);
             this.checkBox7.TabIndex = 15;
@@ -438,7 +438,7 @@ namespace Contact_Tracing_App
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(179, 97);
+            this.checkBox8.Location = new System.Drawing.Point(199, 97);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(15, 14);
             this.checkBox8.TabIndex = 16;
@@ -447,7 +447,7 @@ namespace Contact_Tracing_App
             // checkBox9
             // 
             this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(143, 120);
+            this.checkBox9.Location = new System.Drawing.Point(159, 120);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(15, 14);
             this.checkBox9.TabIndex = 17;
@@ -456,7 +456,7 @@ namespace Contact_Tracing_App
             // checkBox10
             // 
             this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(179, 120);
+            this.checkBox10.Location = new System.Drawing.Point(199, 120);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(15, 14);
             this.checkBox10.TabIndex = 18;
@@ -465,7 +465,7 @@ namespace Contact_Tracing_App
             // checkBox11
             // 
             this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(143, 143);
+            this.checkBox11.Location = new System.Drawing.Point(159, 143);
             this.checkBox11.Name = "checkBox11";
             this.checkBox11.Size = new System.Drawing.Size(15, 14);
             this.checkBox11.TabIndex = 19;
@@ -474,7 +474,7 @@ namespace Contact_Tracing_App
             // checkBox12
             // 
             this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(179, 143);
+            this.checkBox12.Location = new System.Drawing.Point(199, 143);
             this.checkBox12.Name = "checkBox12";
             this.checkBox12.Size = new System.Drawing.Size(15, 14);
             this.checkBox12.TabIndex = 20;
@@ -606,6 +606,7 @@ namespace Contact_Tracing_App
             this.btnSave.TabIndex = 24;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnOpen
             // 
@@ -616,7 +617,7 @@ namespace Contact_Tracing_App
             this.btnOpen.Text = "Open";
             this.btnOpen.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // ContactTracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -643,7 +644,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.txtBoxMidName);
             this.Controls.Add(this.txtBoxLastName);
             this.Controls.Add(this.txtBoxFirstName);
-            this.Name = "Form1";
+            this.Name = "ContactTracing";
             this.Text = "Contact Tracing";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
