@@ -82,7 +82,7 @@ namespace Contact_Tracing_App
             // txtBoxFirstName
             // 
             this.txtBoxFirstName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtBoxFirstName.Location = new System.Drawing.Point(12, 31);
+            this.txtBoxFirstName.Location = new System.Drawing.Point(12, 27);
             this.txtBoxFirstName.Name = "txtBoxFirstName";
             this.txtBoxFirstName.Size = new System.Drawing.Size(125, 23);
             this.txtBoxFirstName.TabIndex = 99;
@@ -90,7 +90,7 @@ namespace Contact_Tracing_App
             // txtBoxLastName
             // 
             this.txtBoxLastName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtBoxLastName.Location = new System.Drawing.Point(274, 31);
+            this.txtBoxLastName.Location = new System.Drawing.Point(274, 27);
             this.txtBoxLastName.Name = "txtBoxLastName";
             this.txtBoxLastName.Size = new System.Drawing.Size(125, 23);
             this.txtBoxLastName.TabIndex = 101;
@@ -98,7 +98,7 @@ namespace Contact_Tracing_App
             // txtBoxMidName
             // 
             this.txtBoxMidName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtBoxMidName.Location = new System.Drawing.Point(143, 31);
+            this.txtBoxMidName.Location = new System.Drawing.Point(143, 27);
             this.txtBoxMidName.Name = "txtBoxMidName";
             this.txtBoxMidName.Size = new System.Drawing.Size(125, 23);
             this.txtBoxMidName.TabIndex = 100;
@@ -106,7 +106,7 @@ namespace Contact_Tracing_App
             // labelFirstName
             // 
             this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Location = new System.Drawing.Point(12, 13);
+            this.labelFirstName.Location = new System.Drawing.Point(12, 9);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(67, 15);
             this.labelFirstName.TabIndex = 3;
@@ -115,7 +115,7 @@ namespace Contact_Tracing_App
             // labelMidName
             // 
             this.labelMidName.AutoSize = true;
-            this.labelMidName.Location = new System.Drawing.Point(143, 13);
+            this.labelMidName.Location = new System.Drawing.Point(143, 9);
             this.labelMidName.Name = "labelMidName";
             this.labelMidName.Size = new System.Drawing.Size(82, 15);
             this.labelMidName.TabIndex = 4;
@@ -124,7 +124,7 @@ namespace Contact_Tracing_App
             // labelLastName
             // 
             this.labelLastName.AutoSize = true;
-            this.labelLastName.Location = new System.Drawing.Point(274, 14);
+            this.labelLastName.Location = new System.Drawing.Point(274, 10);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(66, 15);
             this.labelLastName.TabIndex = 5;
@@ -133,7 +133,7 @@ namespace Contact_Tracing_App
             // labelAddress
             // 
             this.labelAddress.AutoSize = true;
-            this.labelAddress.Location = new System.Drawing.Point(12, 66);
+            this.labelAddress.Location = new System.Drawing.Point(12, 62);
             this.labelAddress.Name = "labelAddress";
             this.labelAddress.Size = new System.Drawing.Size(52, 15);
             this.labelAddress.TabIndex = 6;
@@ -142,7 +142,7 @@ namespace Contact_Tracing_App
             // txtBoxAddress
             // 
             this.txtBoxAddress.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtBoxAddress.Location = new System.Drawing.Point(12, 85);
+            this.txtBoxAddress.Location = new System.Drawing.Point(12, 81);
             this.txtBoxAddress.Name = "txtBoxAddress";
             this.txtBoxAddress.Size = new System.Drawing.Size(387, 23);
             this.txtBoxAddress.TabIndex = 102;
@@ -150,7 +150,7 @@ namespace Contact_Tracing_App
             // txtBoxAge
             // 
             this.txtBoxAge.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtBoxAge.Location = new System.Drawing.Point(12, 138);
+            this.txtBoxAge.Location = new System.Drawing.Point(12, 134);
             this.txtBoxAge.Name = "txtBoxAge";
             this.txtBoxAge.Size = new System.Drawing.Size(125, 23);
             this.txtBoxAge.TabIndex = 103;
@@ -158,7 +158,7 @@ namespace Contact_Tracing_App
             // labelAge
             // 
             this.labelAge.AutoSize = true;
-            this.labelAge.Location = new System.Drawing.Point(12, 120);
+            this.labelAge.Location = new System.Drawing.Point(12, 116);
             this.labelAge.Name = "labelAge";
             this.labelAge.Size = new System.Drawing.Size(31, 15);
             this.labelAge.TabIndex = 9;
@@ -167,7 +167,7 @@ namespace Contact_Tracing_App
             // txtBoxContactNum
             // 
             this.txtBoxContactNum.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtBoxContactNum.Location = new System.Drawing.Point(12, 193);
+            this.txtBoxContactNum.Location = new System.Drawing.Point(12, 189);
             this.txtBoxContactNum.Name = "txtBoxContactNum";
             this.txtBoxContactNum.Size = new System.Drawing.Size(167, 23);
             this.txtBoxContactNum.TabIndex = 106;
@@ -175,7 +175,7 @@ namespace Contact_Tracing_App
             // labelContactNum
             // 
             this.labelContactNum.AutoSize = true;
-            this.labelContactNum.Location = new System.Drawing.Point(11, 175);
+            this.labelContactNum.Location = new System.Drawing.Point(11, 171);
             this.labelContactNum.Name = "labelContactNum";
             this.labelContactNum.Size = new System.Drawing.Size(99, 15);
             this.labelContactNum.TabIndex = 11;
@@ -184,7 +184,7 @@ namespace Contact_Tracing_App
             // txtBoxSex
             // 
             this.txtBoxSex.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtBoxSex.Location = new System.Drawing.Point(143, 138);
+            this.txtBoxSex.Location = new System.Drawing.Point(143, 134);
             this.txtBoxSex.Name = "txtBoxSex";
             this.txtBoxSex.Size = new System.Drawing.Size(125, 23);
             this.txtBoxSex.TabIndex = 104;
@@ -192,7 +192,7 @@ namespace Contact_Tracing_App
             // labelSex
             // 
             this.labelSex.AutoSize = true;
-            this.labelSex.Location = new System.Drawing.Point(144, 120);
+            this.labelSex.Location = new System.Drawing.Point(144, 116);
             this.labelSex.Name = "labelSex";
             this.labelSex.Size = new System.Drawing.Size(28, 15);
             this.labelSex.TabIndex = 13;
@@ -201,7 +201,7 @@ namespace Contact_Tracing_App
             // txtBoxDate
             // 
             this.txtBoxDate.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtBoxDate.Location = new System.Drawing.Point(274, 138);
+            this.txtBoxDate.Location = new System.Drawing.Point(274, 134);
             this.txtBoxDate.Name = "txtBoxDate";
             this.txtBoxDate.Size = new System.Drawing.Size(125, 23);
             this.txtBoxDate.TabIndex = 105;
@@ -209,7 +209,7 @@ namespace Contact_Tracing_App
             // txtBoxDestination
             // 
             this.txtBoxDestination.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtBoxDestination.Location = new System.Drawing.Point(185, 193);
+            this.txtBoxDestination.Location = new System.Drawing.Point(185, 189);
             this.txtBoxDestination.Name = "txtBoxDestination";
             this.txtBoxDestination.Size = new System.Drawing.Size(214, 23);
             this.txtBoxDestination.TabIndex = 107;
@@ -217,7 +217,7 @@ namespace Contact_Tracing_App
             // labelDate
             // 
             this.labelDate.AutoSize = true;
-            this.labelDate.Location = new System.Drawing.Point(274, 120);
+            this.labelDate.Location = new System.Drawing.Point(274, 116);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(34, 15);
             this.labelDate.TabIndex = 16;
@@ -226,7 +226,7 @@ namespace Contact_Tracing_App
             // labelDestination
             // 
             this.labelDestination.AutoSize = true;
-            this.labelDestination.Location = new System.Drawing.Point(185, 175);
+            this.labelDestination.Location = new System.Drawing.Point(185, 171);
             this.labelDestination.Name = "labelDestination";
             this.labelDestination.Size = new System.Drawing.Size(70, 15);
             this.labelDestination.TabIndex = 17;
@@ -235,7 +235,7 @@ namespace Contact_Tracing_App
             // labelQuestion
             // 
             this.labelQuestion.AutoSize = true;
-            this.labelQuestion.Location = new System.Drawing.Point(12, 231);
+            this.labelQuestion.Location = new System.Drawing.Point(12, 227);
             this.labelQuestion.Name = "labelQuestion";
             this.labelQuestion.Size = new System.Drawing.Size(355, 30);
             this.labelQuestion.TabIndex = 18;
@@ -362,7 +362,7 @@ namespace Contact_Tracing_App
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(323, 261);
+            this.btnSave.Location = new System.Drawing.Point(323, 257);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 108;
@@ -372,7 +372,7 @@ namespace Contact_Tracing_App
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(324, 319);
+            this.btnOpen.Location = new System.Drawing.Point(324, 315);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(75, 23);
             this.btnOpen.TabIndex = 109;
@@ -447,14 +447,14 @@ namespace Contact_Tracing_App
             this.panel1.Controls.Add(this.chkBoxDifInBreathing);
             this.panel1.Controls.Add(this.chkBoxColds);
             this.panel1.Controls.Add(this.chkBoxSoreThroat);
-            this.panel1.Location = new System.Drawing.Point(37, 264);
+            this.panel1.Location = new System.Drawing.Point(37, 260);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(281, 87);
             this.panel1.TabIndex = 116;
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(324, 290);
+            this.btnNew.Location = new System.Drawing.Point(324, 286);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(75, 23);
             this.btnNew.TabIndex = 117;
