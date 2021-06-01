@@ -24,20 +24,32 @@ namespace Contact_Tracing_App
             }
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        public void btnSave_Click(object sender, EventArgs e)
         {
             string LastName = txtBoxLastName.Text;
+            string FirstName = txtBoxFirstName.Text;
             StreamWriter outputFile;
-            outputFile = File.AppendText(@"C:\Users\Public\Documents\Contact Tracing Data\" + LastName + ".txt");
-            outputFile.WriteLine("First Name:\t\t" + txtBoxFirstName.Text);
-            outputFile.WriteLine("Middle Name:\t\t" + txtBoxMidName.Text);
-            outputFile.WriteLine("Last Name:\t\t" + txtBoxLastName.Text);
-            outputFile.WriteLine("Address:\t\t" + txtBoxAddress.Text);
+            outputFile = File.AppendText(@"C:\Users\Public\Documents\Contact Tracing Data\" + LastName + "_" + FirstName + ".txt");
+            outputFile.WriteLine("Personal Information:");
+            outputFile.WriteLine("First Name:\t" + txtBoxFirstName.Text);
+            outputFile.WriteLine("Middle Name:\t" + txtBoxMidName.Text);
+            outputFile.WriteLine("Last Name:\t" + txtBoxLastName.Text);
+            outputFile.WriteLine("Address:\t" + txtBoxAddress.Text);
             outputFile.WriteLine("Age:\t\t" + txtBoxAge.Text);
             outputFile.WriteLine("Sex:\t\t" + txtBoxSex.Text);
-            outputFile.WriteLine("Contact Number:\t\t" + txtBoxContactNum.Text);
-            outputFile.WriteLine("Destination:\t\t" + txtBoxDestination.Text);
+            outputFile.WriteLine("Contact Number:\t" + txtBoxContactNum.Text);
+            outputFile.WriteLine("Destination:\t" + txtBoxDestination.Text);
             outputFile.WriteLine("Date:\t\t" + txtBoxDate.Text);
+            outputFile.WriteLine(" ");
+            outputFile.WriteLine("Symptoms:");
+            
+            foreach(Control symptom in panel1.Controls)
+            {
+                if((symptom is CheckBox) && ((CheckBox)symptom).Checked)
+                {
+                    outputFile.WriteLine("\t\t" + symptom.Text);
+                }
+            }
             outputFile.Close();
 
         }

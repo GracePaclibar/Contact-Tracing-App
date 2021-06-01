@@ -74,34 +74,34 @@ namespace Contact_Tracing_App
             this.chkBoxSoreThroat = new System.Windows.Forms.CheckBox();
             this.chkBoxDifInBreathing = new System.Windows.Forms.CheckBox();
             this.chkBoxDiarrhea = new System.Windows.Forms.CheckBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtBoxFirstName
             // 
-            this.txtBoxFirstName.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtBoxFirstName.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxFirstName.Location = new System.Drawing.Point(12, 31);
             this.txtBoxFirstName.Name = "txtBoxFirstName";
             this.txtBoxFirstName.Size = new System.Drawing.Size(125, 23);
             this.txtBoxFirstName.TabIndex = 99;
-            this.txtBoxFirstName.Text = "First Name";
             // 
             // txtBoxLastName
             // 
-            this.txtBoxLastName.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtBoxLastName.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxLastName.Location = new System.Drawing.Point(274, 31);
             this.txtBoxLastName.Name = "txtBoxLastName";
             this.txtBoxLastName.Size = new System.Drawing.Size(125, 23);
             this.txtBoxLastName.TabIndex = 101;
-            this.txtBoxLastName.Text = "Last Name";
             // 
             // txtBoxMidName
             // 
-            this.txtBoxMidName.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtBoxMidName.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxMidName.Location = new System.Drawing.Point(143, 31);
             this.txtBoxMidName.Name = "txtBoxMidName";
             this.txtBoxMidName.Size = new System.Drawing.Size(125, 23);
             this.txtBoxMidName.TabIndex = 100;
-            this.txtBoxMidName.Text = "Middle Name";
             // 
             // labelFirstName
             // 
@@ -141,21 +141,19 @@ namespace Contact_Tracing_App
             // 
             // txtBoxAddress
             // 
-            this.txtBoxAddress.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtBoxAddress.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxAddress.Location = new System.Drawing.Point(12, 85);
             this.txtBoxAddress.Name = "txtBoxAddress";
             this.txtBoxAddress.Size = new System.Drawing.Size(387, 23);
             this.txtBoxAddress.TabIndex = 102;
-            this.txtBoxAddress.Text = "Unit/House No, Street Name, Barangay, City\r\n";
             // 
             // txtBoxAge
             // 
-            this.txtBoxAge.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtBoxAge.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxAge.Location = new System.Drawing.Point(12, 138);
             this.txtBoxAge.Name = "txtBoxAge";
             this.txtBoxAge.Size = new System.Drawing.Size(125, 23);
             this.txtBoxAge.TabIndex = 103;
-            this.txtBoxAge.Text = "Age";
             // 
             // labelAge
             // 
@@ -168,12 +166,11 @@ namespace Contact_Tracing_App
             // 
             // txtBoxContactNum
             // 
-            this.txtBoxContactNum.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtBoxContactNum.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxContactNum.Location = new System.Drawing.Point(12, 193);
             this.txtBoxContactNum.Name = "txtBoxContactNum";
             this.txtBoxContactNum.Size = new System.Drawing.Size(167, 23);
             this.txtBoxContactNum.TabIndex = 106;
-            this.txtBoxContactNum.Text = "Contact Number";
             // 
             // labelContactNum
             // 
@@ -186,12 +183,11 @@ namespace Contact_Tracing_App
             // 
             // txtBoxSex
             // 
-            this.txtBoxSex.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtBoxSex.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxSex.Location = new System.Drawing.Point(143, 138);
             this.txtBoxSex.Name = "txtBoxSex";
             this.txtBoxSex.Size = new System.Drawing.Size(125, 23);
             this.txtBoxSex.TabIndex = 104;
-            this.txtBoxSex.Text = "Sex";
             // 
             // labelSex
             // 
@@ -204,21 +200,19 @@ namespace Contact_Tracing_App
             // 
             // txtBoxDate
             // 
-            this.txtBoxDate.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtBoxDate.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxDate.Location = new System.Drawing.Point(274, 138);
             this.txtBoxDate.Name = "txtBoxDate";
             this.txtBoxDate.Size = new System.Drawing.Size(125, 23);
             this.txtBoxDate.TabIndex = 105;
-            this.txtBoxDate.Text = "DD/MM/YYYY";
             // 
             // txtBoxDestination
             // 
-            this.txtBoxDestination.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtBoxDestination.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxDestination.Location = new System.Drawing.Point(185, 193);
             this.txtBoxDestination.Name = "txtBoxDestination";
             this.txtBoxDestination.Size = new System.Drawing.Size(214, 23);
             this.txtBoxDestination.TabIndex = 107;
-            this.txtBoxDestination.Text = "Destination";
             // 
             // labelDate
             // 
@@ -368,7 +362,7 @@ namespace Contact_Tracing_App
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(324, 365);
+            this.btnSave.Location = new System.Drawing.Point(323, 261);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 108;
@@ -378,7 +372,7 @@ namespace Contact_Tracing_App
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(324, 394);
+            this.btnOpen.Location = new System.Drawing.Point(324, 319);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(75, 23);
             this.btnOpen.TabIndex = 109;
@@ -388,7 +382,7 @@ namespace Contact_Tracing_App
             // chkBoxFever
             // 
             this.chkBoxFever.AutoSize = true;
-            this.chkBoxFever.Location = new System.Drawing.Point(40, 272);
+            this.chkBoxFever.Location = new System.Drawing.Point(0, 11);
             this.chkBoxFever.Name = "chkBoxFever";
             this.chkBoxFever.Size = new System.Drawing.Size(54, 19);
             this.chkBoxFever.TabIndex = 110;
@@ -398,7 +392,7 @@ namespace Contact_Tracing_App
             // chkBoxCough
             // 
             this.chkBoxCough.AutoSize = true;
-            this.chkBoxCough.Location = new System.Drawing.Point(40, 297);
+            this.chkBoxCough.Location = new System.Drawing.Point(0, 36);
             this.chkBoxCough.Name = "chkBoxCough";
             this.chkBoxCough.Size = new System.Drawing.Size(62, 19);
             this.chkBoxCough.TabIndex = 111;
@@ -408,7 +402,7 @@ namespace Contact_Tracing_App
             // chkBoxColds
             // 
             this.chkBoxColds.AutoSize = true;
-            this.chkBoxColds.Location = new System.Drawing.Point(40, 322);
+            this.chkBoxColds.Location = new System.Drawing.Point(0, 61);
             this.chkBoxColds.Name = "chkBoxColds";
             this.chkBoxColds.Size = new System.Drawing.Size(56, 19);
             this.chkBoxColds.TabIndex = 112;
@@ -418,7 +412,7 @@ namespace Contact_Tracing_App
             // chkBoxSoreThroat
             // 
             this.chkBoxSoreThroat.AutoSize = true;
-            this.chkBoxSoreThroat.Location = new System.Drawing.Point(40, 347);
+            this.chkBoxSoreThroat.Location = new System.Drawing.Point(118, 11);
             this.chkBoxSoreThroat.Name = "chkBoxSoreThroat";
             this.chkBoxSoreThroat.Size = new System.Drawing.Size(86, 19);
             this.chkBoxSoreThroat.TabIndex = 113;
@@ -428,7 +422,7 @@ namespace Contact_Tracing_App
             // chkBoxDifInBreathing
             // 
             this.chkBoxDifInBreathing.AutoSize = true;
-            this.chkBoxDifInBreathing.Location = new System.Drawing.Point(40, 372);
+            this.chkBoxDifInBreathing.Location = new System.Drawing.Point(118, 36);
             this.chkBoxDifInBreathing.Name = "chkBoxDifInBreathing";
             this.chkBoxDifInBreathing.Size = new System.Drawing.Size(141, 19);
             this.chkBoxDifInBreathing.TabIndex = 114;
@@ -438,24 +432,42 @@ namespace Contact_Tracing_App
             // chkBoxDiarrhea
             // 
             this.chkBoxDiarrhea.AutoSize = true;
-            this.chkBoxDiarrhea.Location = new System.Drawing.Point(40, 397);
+            this.chkBoxDiarrhea.Location = new System.Drawing.Point(118, 61);
             this.chkBoxDiarrhea.Name = "chkBoxDiarrhea";
             this.chkBoxDiarrhea.Size = new System.Drawing.Size(70, 19);
             this.chkBoxDiarrhea.TabIndex = 115;
             this.chkBoxDiarrhea.Text = "Diarrhea";
             this.chkBoxDiarrhea.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.chkBoxFever);
+            this.panel1.Controls.Add(this.chkBoxDiarrhea);
+            this.panel1.Controls.Add(this.chkBoxCough);
+            this.panel1.Controls.Add(this.chkBoxDifInBreathing);
+            this.panel1.Controls.Add(this.chkBoxColds);
+            this.panel1.Controls.Add(this.chkBoxSoreThroat);
+            this.panel1.Location = new System.Drawing.Point(37, 264);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(281, 87);
+            this.panel1.TabIndex = 116;
+            // 
+            // btnNew
+            // 
+            this.btnNew.Location = new System.Drawing.Point(324, 290);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(75, 23);
+            this.btnNew.TabIndex = 117;
+            this.btnNew.Text = "New";
+            this.btnNew.UseVisualStyleBackColor = true;
+            // 
             // ContactTracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 426);
-            this.Controls.Add(this.chkBoxDiarrhea);
-            this.Controls.Add(this.chkBoxDifInBreathing);
-            this.Controls.Add(this.chkBoxSoreThroat);
-            this.Controls.Add(this.chkBoxColds);
-            this.Controls.Add(this.chkBoxCough);
-            this.Controls.Add(this.chkBoxFever);
+            this.ClientSize = new System.Drawing.Size(410, 349);
+            this.Controls.Add(this.btnNew);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.labelQuestion);
@@ -479,6 +491,8 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.txtBoxFirstName);
             this.Name = "ContactTracing";
             this.Text = "Contact Tracing";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -530,6 +544,8 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.CheckBox chkBoxSoreThroat;
         private System.Windows.Forms.CheckBox chkBoxDifInBreathing;
         private System.Windows.Forms.CheckBox chkBoxDiarrhea;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnNew;
     }
 }
 
