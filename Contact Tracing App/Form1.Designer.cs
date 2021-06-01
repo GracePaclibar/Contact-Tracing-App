@@ -467,7 +467,6 @@ namespace Contact_Tracing_App
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.FileOk_Click);
             // 
             // ContactTracing
             // 
