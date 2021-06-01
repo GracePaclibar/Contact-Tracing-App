@@ -37,9 +37,9 @@ namespace Contact_Tracing_App
             outputFile.WriteLine("Address:\t" + txtBoxAddress.Text);
             outputFile.WriteLine("Age:\t\t" + txtBoxAge.Text);
             outputFile.WriteLine("Sex:\t\t" + txtBoxSex.Text);
+            outputFile.WriteLine("Date:\t\t" + txtBoxDate.Text);
             outputFile.WriteLine("Contact Number:\t" + txtBoxContactNum.Text);
             outputFile.WriteLine("Destination:\t" + txtBoxDestination.Text);
-            outputFile.WriteLine("Date:\t\t" + txtBoxDate.Text);
             outputFile.WriteLine(" ");
             outputFile.WriteLine("Symptoms:");
             
@@ -52,6 +52,25 @@ namespace Contact_Tracing_App
             }
             outputFile.Close();
 
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            txtBoxFirstName.Clear();
+            txtBoxMidName.Clear();
+            txtBoxLastName.Clear();
+            txtBoxAddress.Clear();
+            txtBoxAge.Clear();
+            txtBoxSex.Clear();
+            txtBoxDate.Clear();
+            txtBoxContactNum.Clear();
+            txtBoxDestination.Clear();
+            chkBoxFever.Checked = false;
+            chkBoxCough.Checked = false;
+            chkBoxColds.Checked = false;
+            chkBoxSoreThroat.Checked = false;
+            chkBoxDifInBreathing.Checked = false;
+            chkBoxDiarrhea.Checked = false;
         }
     }
 }
