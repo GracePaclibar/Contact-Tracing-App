@@ -44,8 +44,8 @@ namespace Contact_Tracing_App
             this.labelContactNum = new System.Windows.Forms.Label();
             this.txtBoxSex = new System.Windows.Forms.TextBox();
             this.labelSex = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBoxDate = new System.Windows.Forms.TextBox();
+            this.txtBoxDestination = new System.Windows.Forms.TextBox();
             this.labelDate = new System.Windows.Forms.Label();
             this.labelDestination = new System.Windows.Forms.Label();
             this.labelQuestion = new System.Windows.Forms.Label();
@@ -98,21 +98,21 @@ namespace Contact_Tracing_App
             this.txtBoxFirstName.Location = new System.Drawing.Point(12, 31);
             this.txtBoxFirstName.Name = "txtBoxFirstName";
             this.txtBoxFirstName.Size = new System.Drawing.Size(167, 23);
-            this.txtBoxFirstName.TabIndex = 0;
+            this.txtBoxFirstName.TabIndex = 99;
             // 
             // txtBoxLastName
             // 
             this.txtBoxLastName.Location = new System.Drawing.Point(358, 30);
             this.txtBoxLastName.Name = "txtBoxLastName";
             this.txtBoxLastName.Size = new System.Drawing.Size(167, 23);
-            this.txtBoxLastName.TabIndex = 1;
+            this.txtBoxLastName.TabIndex = 101;
             // 
             // txtBoxMidName
             // 
             this.txtBoxMidName.Location = new System.Drawing.Point(185, 31);
             this.txtBoxMidName.Name = "txtBoxMidName";
             this.txtBoxMidName.Size = new System.Drawing.Size(167, 23);
-            this.txtBoxMidName.TabIndex = 2;
+            this.txtBoxMidName.TabIndex = 100;
             // 
             // labelFirstName
             // 
@@ -155,14 +155,14 @@ namespace Contact_Tracing_App
             this.txtBoxAddress.Location = new System.Drawing.Point(12, 80);
             this.txtBoxAddress.Name = "txtBoxAddress";
             this.txtBoxAddress.Size = new System.Drawing.Size(301, 23);
-            this.txtBoxAddress.TabIndex = 7;
+            this.txtBoxAddress.TabIndex = 102;
             // 
             // txtBoxAge
             // 
             this.txtBoxAge.Location = new System.Drawing.Point(319, 80);
             this.txtBoxAge.Name = "txtBoxAge";
             this.txtBoxAge.Size = new System.Drawing.Size(98, 23);
-            this.txtBoxAge.TabIndex = 8;
+            this.txtBoxAge.TabIndex = 103;
             // 
             // labelAge
             // 
@@ -178,7 +178,7 @@ namespace Contact_Tracing_App
             this.txtBoxContactNum.Location = new System.Drawing.Point(12, 131);
             this.txtBoxContactNum.Name = "txtBoxContactNum";
             this.txtBoxContactNum.Size = new System.Drawing.Size(167, 23);
-            this.txtBoxContactNum.TabIndex = 10;
+            this.txtBoxContactNum.TabIndex = 105;
             // 
             // labelContactNum
             // 
@@ -194,7 +194,7 @@ namespace Contact_Tracing_App
             this.txtBoxSex.Location = new System.Drawing.Point(423, 80);
             this.txtBoxSex.Name = "txtBoxSex";
             this.txtBoxSex.Size = new System.Drawing.Size(102, 23);
-            this.txtBoxSex.TabIndex = 12;
+            this.txtBoxSex.TabIndex = 104;
             // 
             // labelSex
             // 
@@ -205,19 +205,19 @@ namespace Contact_Tracing_App
             this.labelSex.TabIndex = 13;
             this.labelSex.Text = "Sex:";
             // 
-            // textBox1
+            // txtBoxDate
             // 
-            this.textBox1.Location = new System.Drawing.Point(427, 131);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(98, 23);
-            this.textBox1.TabIndex = 14;
+            this.txtBoxDate.Location = new System.Drawing.Point(427, 131);
+            this.txtBoxDate.Name = "txtBoxDate";
+            this.txtBoxDate.Size = new System.Drawing.Size(98, 23);
+            this.txtBoxDate.TabIndex = 107;
             // 
-            // textBox2
+            // txtBoxDestination
             // 
-            this.textBox2.Location = new System.Drawing.Point(185, 131);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(236, 23);
-            this.textBox2.TabIndex = 15;
+            this.txtBoxDestination.Location = new System.Drawing.Point(185, 131);
+            this.txtBoxDestination.Name = "txtBoxDestination";
+            this.txtBoxDestination.Size = new System.Drawing.Size(236, 23);
+            this.txtBoxDestination.TabIndex = 106;
             // 
             // labelDate
             // 
@@ -603,7 +603,7 @@ namespace Contact_Tracing_App
             this.btnSave.Location = new System.Drawing.Point(390, 303);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 24;
+            this.btnSave.TabIndex = 9;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -613,7 +613,7 @@ namespace Contact_Tracing_App
             this.btnOpen.Location = new System.Drawing.Point(390, 332);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(75, 23);
-            this.btnOpen.TabIndex = 25;
+            this.btnOpen.TabIndex = 10;
             this.btnOpen.Text = "Open";
             this.btnOpen.UseVisualStyleBackColor = true;
             // 
@@ -628,8 +628,8 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.labelQuestion);
             this.Controls.Add(this.labelDestination);
             this.Controls.Add(this.labelDate);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxDestination);
+            this.Controls.Add(this.txtBoxDate);
             this.Controls.Add(this.labelSex);
             this.Controls.Add(this.txtBoxSex);
             this.Controls.Add(this.labelContactNum);
@@ -669,8 +669,8 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Label labelContactNum;
         private System.Windows.Forms.TextBox txtBoxSex;
         private System.Windows.Forms.Label labelSex;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBoxDate;
+        private System.Windows.Forms.TextBox txtBoxDestination;
         private System.Windows.Forms.Label labelDate;
         private System.Windows.Forms.Label labelDestination;
         private System.Windows.Forms.Label labelQuestion;

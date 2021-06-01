@@ -26,8 +26,29 @@ namespace Contact_Tracing_App
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            string LastName = txtBoxLastName.Text;
             StreamWriter outputFile;
-            outputFile = File.AppendText("");
+            outputFile = File.AppendText("LastName.txt");
+            outputFile.WriteLine("First Name:");
+            outputFile.WriteLine(txtBoxFirstName.Text);
+            outputFile.WriteLine("Middle Name:");
+            outputFile.WriteLine(txtBoxMidName.Text);
+            outputFile.WriteLine("Last Name:");
+            outputFile.WriteLine(txtBoxLastName.Text);
+            outputFile.WriteLine("Address:");
+            outputFile.WriteLine(txtBoxAddress.Text);
+            outputFile.WriteLine("Age:");
+            outputFile.WriteLine(txtBoxAge.Text);
+            outputFile.WriteLine("Sex:");
+            outputFile.WriteLine(txtBoxSex.Text);
+            outputFile.WriteLine("Contact Number:");
+            outputFile.WriteLine(txtBoxContactNum.Text);
+            outputFile.WriteLine("Destination:");
+            outputFile.WriteLine(txtBoxDestination.Text);
+            outputFile.WriteLine("Date:");
+            outputFile.WriteLine(txtBoxDate.Text);
+            outputFile.Close();
+
         }
     }
 }
