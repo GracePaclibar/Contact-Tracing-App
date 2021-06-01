@@ -29,24 +29,15 @@ namespace Contact_Tracing_App
             string LastName = txtBoxLastName.Text;
             StreamWriter outputFile;
             outputFile = File.AppendText(@"C:\Users\Public\Documents\Contact Tracing Data\" + LastName + ".txt");
-            outputFile.WriteLine("First Name:");
-            outputFile.WriteLine(txtBoxFirstName.Text);
-            outputFile.WriteLine("Middle Name:");
-            outputFile.WriteLine(txtBoxMidName.Text);
-            outputFile.WriteLine("Last Name:");
-            outputFile.WriteLine(txtBoxLastName.Text);
-            outputFile.WriteLine("Address:");
-            outputFile.WriteLine(txtBoxAddress.Text);
-            outputFile.WriteLine("Age:");
-            outputFile.WriteLine(txtBoxAge.Text);
-            outputFile.WriteLine("Sex:");
-            outputFile.WriteLine(txtBoxSex.Text);
-            outputFile.WriteLine("Contact Number:");
-            outputFile.WriteLine(txtBoxContactNum.Text);
-            outputFile.WriteLine("Destination:");
-            outputFile.WriteLine(txtBoxDestination.Text);
-            outputFile.WriteLine("Date:");
-            outputFile.WriteLine(txtBoxDate.Text);
+            outputFile.WriteLine("First Name:\t\t" + txtBoxFirstName.Text);
+            outputFile.WriteLine("Middle Name:\t\t" + txtBoxMidName.Text);
+            outputFile.WriteLine("Last Name:\t\t" + txtBoxLastName.Text);
+            outputFile.WriteLine("Address:\t\t" + txtBoxAddress.Text);
+            outputFile.WriteLine("Age:\t\t" + txtBoxAge.Text);
+            outputFile.WriteLine("Sex:\t\t" + txtBoxSex.Text);
+            outputFile.WriteLine("Contact Number:\t\t" + txtBoxContactNum.Text);
+            outputFile.WriteLine("Destination:\t\t" + txtBoxDestination.Text);
+            outputFile.WriteLine("Date:\t\t" + txtBoxDate.Text);
             outputFile.Close();
 
         }
