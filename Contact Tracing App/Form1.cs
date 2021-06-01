@@ -28,7 +28,7 @@ namespace Contact_Tracing_App
         {
             string LastName = txtBoxLastName.Text;
             StreamWriter outputFile;
-            outputFile = File.AppendText("LastName.txt");
+            outputFile = File.AppendText(@"C:\Users\Public\Documents\Contact Tracing Data\" + LastName + ".txt");
             outputFile.WriteLine("First Name:");
             outputFile.WriteLine(txtBoxFirstName.Text);
             outputFile.WriteLine("Middle Name:");
