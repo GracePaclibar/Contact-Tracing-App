@@ -29,16 +29,6 @@ namespace Contact_Tracing_App
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnNew = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.chkBoxFever = new System.Windows.Forms.CheckBox();
-            this.chkBoxDiarrhea = new System.Windows.Forms.CheckBox();
-            this.chkBoxCough = new System.Windows.Forms.CheckBox();
-            this.chkBoxDifInBreathing = new System.Windows.Forms.CheckBox();
-            this.chkBoxColds = new System.Windows.Forms.CheckBox();
-            this.chkBoxSoreThroat = new System.Windows.Forms.CheckBox();
-            this.btnOpen = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.labelQuestion = new System.Windows.Forms.Label();
             this.labelDestination = new System.Windows.Forms.Label();
             this.labelDate = new System.Windows.Forms.Label();
@@ -58,118 +48,18 @@ namespace Contact_Tracing_App
             this.txtBoxMidName = new System.Windows.Forms.TextBox();
             this.txtBoxLastName = new System.Windows.Forms.TextBox();
             this.txtBoxFirstName = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnNew
-            // 
-            this.btnNew.Location = new System.Drawing.Point(324, 286);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(75, 23);
-            this.btnNew.TabIndex = 140;
-            this.btnNew.Text = "New";
-            this.btnNew.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.chkBoxFever);
-            this.panel1.Controls.Add(this.chkBoxDiarrhea);
-            this.panel1.Controls.Add(this.chkBoxCough);
-            this.panel1.Controls.Add(this.chkBoxDifInBreathing);
-            this.panel1.Controls.Add(this.chkBoxColds);
-            this.panel1.Controls.Add(this.chkBoxSoreThroat);
-            this.panel1.Location = new System.Drawing.Point(37, 260);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(281, 87);
-            this.panel1.TabIndex = 139;
-            // 
-            // chkBoxFever
-            // 
-            this.chkBoxFever.AutoSize = true;
-            this.chkBoxFever.Location = new System.Drawing.Point(0, 11);
-            this.chkBoxFever.Name = "chkBoxFever";
-            this.chkBoxFever.Size = new System.Drawing.Size(54, 19);
-            this.chkBoxFever.TabIndex = 110;
-            this.chkBoxFever.Text = "Fever";
-            this.chkBoxFever.UseVisualStyleBackColor = true;
-            // 
-            // chkBoxDiarrhea
-            // 
-            this.chkBoxDiarrhea.AutoSize = true;
-            this.chkBoxDiarrhea.Location = new System.Drawing.Point(118, 61);
-            this.chkBoxDiarrhea.Name = "chkBoxDiarrhea";
-            this.chkBoxDiarrhea.Size = new System.Drawing.Size(70, 19);
-            this.chkBoxDiarrhea.TabIndex = 115;
-            this.chkBoxDiarrhea.Text = "Diarrhea";
-            this.chkBoxDiarrhea.UseVisualStyleBackColor = true;
-            // 
-            // chkBoxCough
-            // 
-            this.chkBoxCough.AutoSize = true;
-            this.chkBoxCough.Location = new System.Drawing.Point(0, 36);
-            this.chkBoxCough.Name = "chkBoxCough";
-            this.chkBoxCough.Size = new System.Drawing.Size(62, 19);
-            this.chkBoxCough.TabIndex = 111;
-            this.chkBoxCough.Text = "Cough";
-            this.chkBoxCough.UseVisualStyleBackColor = true;
-            // 
-            // chkBoxDifInBreathing
-            // 
-            this.chkBoxDifInBreathing.AutoSize = true;
-            this.chkBoxDifInBreathing.Location = new System.Drawing.Point(118, 36);
-            this.chkBoxDifInBreathing.Name = "chkBoxDifInBreathing";
-            this.chkBoxDifInBreathing.Size = new System.Drawing.Size(141, 19);
-            this.chkBoxDifInBreathing.TabIndex = 114;
-            this.chkBoxDifInBreathing.Text = "Difficulty in Breathing";
-            this.chkBoxDifInBreathing.UseVisualStyleBackColor = true;
-            // 
-            // chkBoxColds
-            // 
-            this.chkBoxColds.AutoSize = true;
-            this.chkBoxColds.Location = new System.Drawing.Point(0, 61);
-            this.chkBoxColds.Name = "chkBoxColds";
-            this.chkBoxColds.Size = new System.Drawing.Size(56, 19);
-            this.chkBoxColds.TabIndex = 112;
-            this.chkBoxColds.Text = "Colds";
-            this.chkBoxColds.UseVisualStyleBackColor = true;
-            // 
-            // chkBoxSoreThroat
-            // 
-            this.chkBoxSoreThroat.AutoSize = true;
-            this.chkBoxSoreThroat.Location = new System.Drawing.Point(118, 11);
-            this.chkBoxSoreThroat.Name = "chkBoxSoreThroat";
-            this.chkBoxSoreThroat.Size = new System.Drawing.Size(86, 19);
-            this.chkBoxSoreThroat.TabIndex = 113;
-            this.chkBoxSoreThroat.Text = "Sore Throat";
-            this.chkBoxSoreThroat.UseVisualStyleBackColor = true;
-            // 
-            // btnOpen
-            // 
-            this.btnOpen.Location = new System.Drawing.Point(324, 315);
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(75, 23);
-            this.btnOpen.TabIndex = 138;
-            this.btnOpen.Text = "Open";
-            this.btnOpen.UseVisualStyleBackColor = true;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(323, 257);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 137;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // labelQuestion
             // 
             this.labelQuestion.AutoSize = true;
             this.labelQuestion.Location = new System.Drawing.Point(12, 227);
             this.labelQuestion.Name = "labelQuestion";
-            this.labelQuestion.Size = new System.Drawing.Size(355, 30);
+            this.labelQuestion.Size = new System.Drawing.Size(102, 15);
             this.labelQuestion.TabIndex = 127;
-            this.labelQuestion.Text = "Check the box if you have been sick of any of the following in the \r\nlast 14 days" +
-    ".\r\n";
+            this.labelQuestion.Text = "List of Symptoms:";
             // 
             // labelDestination
             // 
@@ -324,15 +214,32 @@ namespace Contact_Tracing_App
             this.txtBoxFirstName.Size = new System.Drawing.Size(125, 23);
             this.txtBoxFirstName.TabIndex = 128;
             // 
+            // textBox1
+            // 
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.textBox1.Location = new System.Drawing.Point(12, 257);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(305, 80);
+            this.textBox1.TabIndex = 141;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(324, 315);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 138;
+            this.btnBack.TabStop = false;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 349);
-            this.Controls.Add(this.btnNew);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnOpen);
-            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.labelQuestion);
             this.Controls.Add(this.labelDestination);
             this.Controls.Add(this.labelDate);
@@ -354,25 +261,13 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.txtBoxFirstName);
             this.Name = "Form2";
             this.Text = "Form2";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnNew;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox chkBoxFever;
-        private System.Windows.Forms.CheckBox chkBoxDiarrhea;
-        private System.Windows.Forms.CheckBox chkBoxCough;
-        private System.Windows.Forms.CheckBox chkBoxDifInBreathing;
-        private System.Windows.Forms.CheckBox chkBoxColds;
-        private System.Windows.Forms.CheckBox chkBoxSoreThroat;
-        private System.Windows.Forms.Button btnOpen;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label labelQuestion;
         private System.Windows.Forms.Label labelDestination;
         private System.Windows.Forms.Label labelDate;
@@ -392,5 +287,7 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.TextBox txtBoxMidName;
         private System.Windows.Forms.TextBox txtBoxLastName;
         private System.Windows.Forms.TextBox txtBoxFirstName;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnBack;
     }
 }

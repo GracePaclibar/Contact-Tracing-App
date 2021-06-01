@@ -76,6 +76,7 @@ namespace Contact_Tracing_App
             this.chkBoxDiarrhea = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnNew = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -362,7 +363,7 @@ namespace Contact_Tracing_App
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(323, 257);
+            this.btnSave.Location = new System.Drawing.Point(323, 260);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 108;
@@ -372,12 +373,13 @@ namespace Contact_Tracing_App
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(324, 315);
+            this.btnOpen.Location = new System.Drawing.Point(324, 318);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(75, 23);
             this.btnOpen.TabIndex = 109;
             this.btnOpen.Text = "Open";
             this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // chkBoxFever
             // 
@@ -454,13 +456,18 @@ namespace Contact_Tracing_App
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(324, 286);
+            this.btnNew.Location = new System.Drawing.Point(324, 289);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(75, 23);
             this.btnNew.TabIndex = 117;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.FileOk_Click);
             // 
             // ContactTracing
             // 
@@ -547,6 +554,7 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.CheckBox chkBoxDiarrhea;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

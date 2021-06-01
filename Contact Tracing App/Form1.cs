@@ -22,6 +22,7 @@ namespace Contact_Tracing_App
                 string Path = System.IO.Path.Combine(Location, "Contact Tracing Data");
                 System.IO.Directory.CreateDirectory(Path);
             }
+            Form2 secondForm = new Form2();
         }
 
         public void btnSave_Click(object sender, EventArgs e)
@@ -71,6 +72,19 @@ namespace Contact_Tracing_App
             chkBoxSoreThroat.Checked = false;
             chkBoxDifInBreathing.Checked = false;
             chkBoxDiarrhea.Checked = false;
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.InitialDirectory = @"C:\Users\Public\Documents\Contact Tracing Data";
+            openFileDialog1.DefaultExt = "txt";
+            openFileDialog1.ShowDialog();
+        }
+
+        private void FileOk_Click(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }
