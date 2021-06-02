@@ -77,7 +77,17 @@ namespace Contact_Tracing_App
 
         private void btnOpen_Click(object sender, EventArgs e)
         {
-            secondForm.Show();
+            var filePath = string.Empty;
+            using(OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = @"C:\Users\Public\Documents\Contact Tracing Data";
+                openFileDialog.DefaultExt = "txt";
+                filePath = openFileDialog.FileName;
+                if(openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    secondForm.Show();
+                }
+            }
         }
     }
 }

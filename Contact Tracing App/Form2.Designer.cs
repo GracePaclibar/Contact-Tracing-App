@@ -84,6 +84,7 @@ namespace Contact_Tracing_App
             this.txtBoxDestination.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxDestination.Location = new System.Drawing.Point(185, 189);
             this.txtBoxDestination.Name = "txtBoxDestination";
+            this.txtBoxDestination.ReadOnly = true;
             this.txtBoxDestination.Size = new System.Drawing.Size(214, 23);
             this.txtBoxDestination.TabIndex = 136;
             // 
@@ -92,6 +93,7 @@ namespace Contact_Tracing_App
             this.txtBoxDate.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxDate.Location = new System.Drawing.Point(274, 134);
             this.txtBoxDate.Name = "txtBoxDate";
+            this.txtBoxDate.ReadOnly = true;
             this.txtBoxDate.Size = new System.Drawing.Size(125, 23);
             this.txtBoxDate.TabIndex = 134;
             // 
@@ -109,6 +111,7 @@ namespace Contact_Tracing_App
             this.txtBoxSex.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxSex.Location = new System.Drawing.Point(143, 134);
             this.txtBoxSex.Name = "txtBoxSex";
+            this.txtBoxSex.ReadOnly = true;
             this.txtBoxSex.Size = new System.Drawing.Size(125, 23);
             this.txtBoxSex.TabIndex = 133;
             // 
@@ -126,6 +129,7 @@ namespace Contact_Tracing_App
             this.txtBoxContactNum.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxContactNum.Location = new System.Drawing.Point(12, 189);
             this.txtBoxContactNum.Name = "txtBoxContactNum";
+            this.txtBoxContactNum.ReadOnly = true;
             this.txtBoxContactNum.Size = new System.Drawing.Size(167, 23);
             this.txtBoxContactNum.TabIndex = 135;
             // 
@@ -143,6 +147,7 @@ namespace Contact_Tracing_App
             this.txtBoxAge.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxAge.Location = new System.Drawing.Point(12, 134);
             this.txtBoxAge.Name = "txtBoxAge";
+            this.txtBoxAge.ReadOnly = true;
             this.txtBoxAge.Size = new System.Drawing.Size(125, 23);
             this.txtBoxAge.TabIndex = 132;
             // 
@@ -151,6 +156,7 @@ namespace Contact_Tracing_App
             this.txtBoxAddress.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxAddress.Location = new System.Drawing.Point(12, 81);
             this.txtBoxAddress.Name = "txtBoxAddress";
+            this.txtBoxAddress.ReadOnly = true;
             this.txtBoxAddress.Size = new System.Drawing.Size(387, 23);
             this.txtBoxAddress.TabIndex = 131;
             // 
@@ -195,6 +201,7 @@ namespace Contact_Tracing_App
             this.txtBoxMidName.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxMidName.Location = new System.Drawing.Point(143, 27);
             this.txtBoxMidName.Name = "txtBoxMidName";
+            this.txtBoxMidName.ReadOnly = true;
             this.txtBoxMidName.Size = new System.Drawing.Size(125, 23);
             this.txtBoxMidName.TabIndex = 129;
             // 
@@ -203,6 +210,7 @@ namespace Contact_Tracing_App
             this.txtBoxLastName.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxLastName.Location = new System.Drawing.Point(274, 27);
             this.txtBoxLastName.Name = "txtBoxLastName";
+            this.txtBoxLastName.ReadOnly = true;
             this.txtBoxLastName.Size = new System.Drawing.Size(125, 23);
             this.txtBoxLastName.TabIndex = 130;
             // 
@@ -220,6 +228,7 @@ namespace Contact_Tracing_App
             this.textBox1.Location = new System.Drawing.Point(12, 257);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(305, 80);
             this.textBox1.TabIndex = 141;
             // 
@@ -261,7 +270,6 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.txtBoxFirstName);
             this.Name = "Form2";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
