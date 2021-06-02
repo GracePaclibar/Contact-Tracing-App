@@ -27,50 +27,58 @@ namespace Contact_Tracing_App
         public void btnSave_Click(object sender, EventArgs e)
         {
             string LastName = txtBoxLastName.Text;
+            string MidName = txtBoxMidName.Text;
             string FirstName = txtBoxFirstName.Text;
-            StreamWriter outputFile;
-            outputFile = File.AppendText(@"C:\Users\Public\Documents\Contact Tracing Data\" + LastName + "_" + FirstName + ".txt");
-            outputFile.WriteLine("Personal Information:");
-            outputFile.WriteLine("==============================");
-            outputFile.WriteLine("First Name:");
-            outputFile.WriteLine(txtBoxFirstName.Text);
-            outputFile.WriteLine("");
-            outputFile.WriteLine("Middle Name:");
-            outputFile.WriteLine(txtBoxMidName.Text);
-            outputFile.WriteLine("");
-            outputFile.WriteLine("Last Name:");
-            outputFile.WriteLine(txtBoxLastName.Text);
-            outputFile.WriteLine("");
-            outputFile.WriteLine("Address:");
-            outputFile.WriteLine(txtBoxAddress.Text);
-            outputFile.WriteLine("");
-            outputFile.WriteLine("Age:");
-            outputFile.WriteLine(txtBoxAge.Text);
-            outputFile.WriteLine("");
-            outputFile.WriteLine("Gender:");
-            outputFile.WriteLine(txtBoxGender.Text);
-            outputFile.WriteLine("");
-            outputFile.WriteLine("Date:");
-            outputFile.WriteLine(txtBoxDate.Text);
-            outputFile.WriteLine("");
-            outputFile.WriteLine("Contact Number:");
-            outputFile.WriteLine(txtBoxContactNum.Text);
-            outputFile.WriteLine("");
-            outputFile.WriteLine("Destination:");
-            outputFile.WriteLine(txtBoxDestination.Text);
-            outputFile.WriteLine("==============================");
-            outputFile.WriteLine("Symptoms:");
-
-            foreach (Control symptom in panel1.Controls)
+            if (File.Exists(@"C:\Users\Public\Documents\Contact Tracing Data\" + LastName + "_" + FirstName + "_" + MidName + ".txt"))
             {
-                if ((symptom is CheckBox) && ((CheckBox)symptom).Checked)
-                {
-                    outputFile.WriteLine(symptom.Text);
-                }
+                MessageBox.Show("Data Already Exists!");
             }
+            else
+            {
+                StreamWriter outputFile;
+                outputFile = File.AppendText(@"C:\Users\Public\Documents\Contact Tracing Data\" + LastName + "_" + FirstName + "_" + MidName + ".txt");
+                outputFile.WriteLine("Personal Information:");
+                outputFile.WriteLine("==============================");
+                outputFile.WriteLine("First Name:");
+                outputFile.WriteLine(txtBoxFirstName.Text);
+                outputFile.WriteLine("");
+                outputFile.WriteLine("Middle Name:");
+                outputFile.WriteLine(txtBoxMidName.Text);
+                outputFile.WriteLine("");
+                outputFile.WriteLine("Last Name:");
+                outputFile.WriteLine(txtBoxLastName.Text);
+                outputFile.WriteLine("");
+                outputFile.WriteLine("Address:");
+                outputFile.WriteLine(txtBoxAddress.Text);
+                outputFile.WriteLine("");
+                outputFile.WriteLine("Age:");
+                outputFile.WriteLine(txtBoxAge.Text);
+                outputFile.WriteLine("");
+                outputFile.WriteLine("Gender:");
+                outputFile.WriteLine(txtBoxGender.Text);
+                outputFile.WriteLine("");
+                outputFile.WriteLine("Date:");
+                outputFile.WriteLine(txtBoxDate.Text);
+                outputFile.WriteLine("");
+                outputFile.WriteLine("Contact Number:");
+                outputFile.WriteLine(txtBoxContactNum.Text);
+                outputFile.WriteLine("");
+                outputFile.WriteLine("Destination:");
+                outputFile.WriteLine(txtBoxDestination.Text);
+                outputFile.WriteLine("==============================");
+                outputFile.WriteLine("Symptoms:");
 
-            outputFile.Close();
+                foreach (Control symptom in panel1.Controls)
+                {
+                    if ((symptom is CheckBox) && ((CheckBox)symptom).Checked)
+                    {
+                        outputFile.WriteLine(symptom.Text);
+                    }
+                }
 
+                outputFile.Close();
+            }
+            
         }
 
         private void btnNew_Click(object sender, EventArgs e)
