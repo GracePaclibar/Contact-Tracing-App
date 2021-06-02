@@ -47,8 +47,8 @@ namespace Contact_Tracing_App
             outputFile.WriteLine("Age:");
             outputFile.WriteLine(txtBoxAge.Text);
             outputFile.WriteLine("");
-            outputFile.WriteLine("Sex:");
-            outputFile.WriteLine(txtBoxSex.Text);
+            outputFile.WriteLine("Gender:");
+            outputFile.WriteLine(txtBoxGender.Text);
             outputFile.WriteLine("");
             outputFile.WriteLine("Date:");
             outputFile.WriteLine(txtBoxDate.Text);
@@ -79,7 +79,7 @@ namespace Contact_Tracing_App
             txtBoxLastName.Clear();
             txtBoxAddress.Clear();
             txtBoxAge.Clear();
-            txtBoxSex.Clear();
+            txtBoxGender.Clear();
             txtBoxDate.Clear();
             txtBoxContactNum.Clear();
             txtBoxDestination.Clear();
@@ -96,7 +96,7 @@ namespace Contact_Tracing_App
         public static string LastName = "";
         public static string Address = "";
         public static string Age = "";
-        public static string Sex = "";
+        public static string Gender = "";
         public static string Date = "";
         public static string ContactNumber = "";
         public static string Destination = "";
@@ -121,6 +121,31 @@ namespace Contact_Tracing_App
         private void SetAddress(string text)
         {
             Address = text;
+        }
+
+        private void SetAge(string text)
+        {
+            Age = text;
+        }
+
+        private void SetGender(string text)
+        {
+            Gender = text;
+        }
+
+        private void SetDate(string text)
+        {
+            Date = text;
+        }
+
+        private void SetContactNum(string text)
+        {
+            ContactNumber = text;
+        }
+
+        private void SetDestination(string text)
+        {
+            Destination = text;
         }
 
         public void btnOpen_Click(object sender, EventArgs e)
@@ -172,6 +197,56 @@ namespace Contact_Tracing_App
                                     {
                                         SetAddress(inputFile.ReadLine());
                                         progress = progress++;
+                                    }
+
+                                    if (progress < 10)
+                                    {
+                                        int lineNumberAge = 4;
+                                        for (int i = 1; i < lineNumberAge; i++)
+                                        {
+                                            SetAge(inputFile.ReadLine());
+                                            progress = progress++;
+                                        }
+
+                                        if (progress < 10)
+                                        {
+                                            int lineNumberGender = 4;
+                                            for (int i = 1; i < lineNumberGender; i++)
+                                            {
+                                                SetGender(inputFile.ReadLine());
+                                                progress = progress++;
+                                            }
+
+                                            if (progress < 10)
+                                            {
+                                                int lineNumberDate = 4;
+                                                for (int i = 1; i < lineNumberDate; i++)
+                                                {
+                                                    SetDate(inputFile.ReadLine());
+                                                    progress = progress++;
+                                                }
+
+                                                if (progress < 10)
+                                                {
+                                                    int lineNumberContactNum = 4;
+                                                    for (int i = 1; i < lineNumberContactNum; i++)
+                                                    {
+                                                        SetContactNum(inputFile.ReadLine());
+                                                        progress = progress++;
+                                                    }
+
+                                                    if (progress < 10)
+                                                    {
+                                                        int lineNumberDestination = 4;
+                                                        for (int i = 1; i < lineNumberDestination; i++)
+                                                        {
+                                                            SetDestination(inputFile.ReadLine());
+                                                            progress = progress++;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                              

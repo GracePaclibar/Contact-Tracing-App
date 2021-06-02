@@ -42,8 +42,8 @@ namespace Contact_Tracing_App
             this.labelAge = new System.Windows.Forms.Label();
             this.txtBoxContactNum = new System.Windows.Forms.TextBox();
             this.labelContactNum = new System.Windows.Forms.Label();
-            this.txtBoxSex = new System.Windows.Forms.TextBox();
-            this.labelSex = new System.Windows.Forms.Label();
+            this.txtBoxGender = new System.Windows.Forms.TextBox();
+            this.labelGender = new System.Windows.Forms.Label();
             this.txtBoxDate = new System.Windows.Forms.TextBox();
             this.txtBoxDestination = new System.Windows.Forms.TextBox();
             this.labelDate = new System.Windows.Forms.Label();
@@ -182,22 +182,22 @@ namespace Contact_Tracing_App
             this.labelContactNum.TabIndex = 11;
             this.labelContactNum.Text = "Contact Number:";
             // 
-            // txtBoxSex
+            // txtBoxGender
             // 
-            this.txtBoxSex.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtBoxSex.Location = new System.Drawing.Point(143, 134);
-            this.txtBoxSex.Name = "txtBoxSex";
-            this.txtBoxSex.Size = new System.Drawing.Size(125, 23);
-            this.txtBoxSex.TabIndex = 104;
+            this.txtBoxGender.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtBoxGender.Location = new System.Drawing.Point(143, 134);
+            this.txtBoxGender.Name = "txtBoxGender";
+            this.txtBoxGender.Size = new System.Drawing.Size(125, 23);
+            this.txtBoxGender.TabIndex = 104;
             // 
-            // labelSex
+            // labelGender
             // 
-            this.labelSex.AutoSize = true;
-            this.labelSex.Location = new System.Drawing.Point(144, 116);
-            this.labelSex.Name = "labelSex";
-            this.labelSex.Size = new System.Drawing.Size(28, 15);
-            this.labelSex.TabIndex = 13;
-            this.labelSex.Text = "Sex:";
+            this.labelGender.AutoSize = true;
+            this.labelGender.Location = new System.Drawing.Point(144, 116);
+            this.labelGender.Name = "labelGender";
+            this.labelGender.Size = new System.Drawing.Size(45, 15);
+            this.labelGender.TabIndex = 13;
+            this.labelGender.Text = "Gender";
             // 
             // txtBoxDate
             // 
@@ -482,8 +482,8 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.labelDate);
             this.Controls.Add(this.txtBoxDestination);
             this.Controls.Add(this.txtBoxDate);
-            this.Controls.Add(this.labelSex);
-            this.Controls.Add(this.txtBoxSex);
+            this.Controls.Add(this.labelGender);
+            this.Controls.Add(this.txtBoxGender);
             this.Controls.Add(this.labelContactNum);
             this.Controls.Add(this.txtBoxContactNum);
             this.Controls.Add(this.labelAge);
@@ -519,8 +519,8 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Label labelAge;
         private System.Windows.Forms.TextBox txtBoxContactNum;
         private System.Windows.Forms.Label labelContactNum;
-        private System.Windows.Forms.TextBox txtBoxSex;
-        private System.Windows.Forms.Label labelSex;
+        private System.Windows.Forms.TextBox txtBoxGender;
+        private System.Windows.Forms.Label labelGender;
         private System.Windows.Forms.TextBox txtBoxDate;
         private System.Windows.Forms.TextBox txtBoxDestination;
         private System.Windows.Forms.Label labelDate;

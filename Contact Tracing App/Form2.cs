@@ -24,6 +24,11 @@ namespace Contact_Tracing_App
             txtBoxMidName.Text = ContactTracing.MidName;
             txtBoxLastName.Text = ContactTracing.LastName;
             txtBoxAddress.Text = ContactTracing.Address;
+            txtBoxAge.Text = ContactTracing.Age;
+            txtBoxGender.Text = ContactTracing.Gender;
+            txtBoxDate.Text = ContactTracing.Date;
+            txtBoxContactNum.Text = ContactTracing.ContactNumber;
+            txtBoxDestination.Text = ContactTracing.Destination;
         }
     }
 }
