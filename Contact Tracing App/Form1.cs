@@ -34,6 +34,7 @@ namespace Contact_Tracing_App
             outputFile.WriteLine("==============================");
             outputFile.WriteLine("First Name:");
             outputFile.WriteLine(txtBoxFirstName.Text);
+            outputFile.WriteLine("");
             outputFile.WriteLine("Middle Name:");
             outputFile.WriteLine(txtBoxMidName.Text);
             outputFile.WriteLine("");
@@ -91,12 +92,25 @@ namespace Contact_Tracing_App
         }
 
         public static string FirstName = "";
+        public static string MidName = "";
+        public static string LastName = "";
+        public static string Address = "";
+        public static string Age = "";
+        public static string Sex = "";
+        public static string Date = "";
+        public static string ContactNumber = "";
+        public static string Destination = "";
 
         Form2 secondForm = new Form2();
 
-        private void ValueForFirstName(string text)
+        private void SetFirstName(string text)
         {
             FirstName = text;
+        }
+
+        private void SetMidName(string text)
+        {
+            MidName = text;
         }
 
         public void btnOpen_Click(object sender, EventArgs e)
@@ -112,16 +126,29 @@ namespace Contact_Tracing_App
                     StreamReader inputFile;
                     inputFile = File.OpenText(openFileDialog.FileName);
 
-                    if (Form2.FirstName == "")
+                    int progress = 0;
+
+                    if (progress < 10)
                     {
                         int lineNumber = 5;
                         for (int i = 1; i < lineNumber; i++)
                         {
-                            ValueForFirstName(inputFile.ReadLine());
+                            SetFirstName(inputFile.ReadLine());
+                            progress = progress++;
+                        }
+
+                        if (progress < 10)
+                        {
+                            int lineNumber2 = 4;
+                            for (int i = 1; i < lineNumber2; i++)
+                            {
+                                SetMidName(inputFile.ReadLine());
+                                progress = progress++;
+                            }
                         }
                     }
-
-                 secondForm.Show();
+                    
+                    secondForm.Show();
                 }
             }
         }
