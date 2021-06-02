@@ -60,14 +60,15 @@ namespace Contact_Tracing_App
             outputFile.WriteLine(txtBoxDestination.Text);
             outputFile.WriteLine("==============================");
             outputFile.WriteLine("Symptoms:");
-            
-            foreach(Control symptom in panel1.Controls)
+
+            foreach (Control symptom in panel1.Controls)
             {
-                if((symptom is CheckBox) && ((CheckBox)symptom).Checked)
+                if ((symptom is CheckBox) && ((CheckBox)symptom).Checked)
                 {
                     outputFile.WriteLine(symptom.Text);
                 }
             }
+
             outputFile.Close();
 
         }
@@ -100,6 +101,13 @@ namespace Contact_Tracing_App
         public static string Date = "";
         public static string ContactNumber = "";
         public static string Destination = "";
+        public static string Symptom1 = "";
+        public static string Symptom2 = "";
+        public static string Symptom3 = "";
+        public static string Symptom4 = "";
+        public static string Symptom5 = "";
+        public static string Symptom6 = "";
+
 
         Form2 secondForm = new Form2();
 
@@ -148,10 +156,35 @@ namespace Contact_Tracing_App
             Destination = text;
         }
 
+        private void SetSymptom1(string text)
+        {
+            Symptom1 = text;
+        }
+        private void SetSymptom2(string text)
+        {
+            Symptom2 = text;
+        }
+        private void SetSymptom3(string text)
+        {
+            Symptom3 = text;
+        }
+        private void SetSymptom4(string text)
+        {
+            Symptom4 = text;
+        }
+        private void SetSymptom5(string text)
+        {
+            Symptom5 = text;
+        }
+        private void SetSymptom6(string text)
+        {
+            Symptom6 = text;
+        }
+
         public void btnOpen_Click(object sender, EventArgs e)
         {
 
-            using(OpenFileDialog openFileDialog = new OpenFileDialog())
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.InitialDirectory = @"C:\Users\Public\Documents\Contact Tracing Data";
                 openFileDialog.DefaultExt = "txt";
@@ -243,21 +276,86 @@ namespace Contact_Tracing_App
                                                             SetDestination(inputFile.ReadLine());
                                                             progress = progress++;
                                                         }
+
+                                                        int symptomProgress = 0;
+
+                                                        if (symptomProgress < 7)
+                                                        {
+                                                            int lineNumberSymptom1 = 4;
+                                                            for (int i = 1; i < lineNumberSymptom1; i++)
+                                                            {
+                                                                SetSymptom1(inputFile.ReadLine());
+                                                                symptomProgress++;
+                                                            }
+
+                                                            if (symptomProgress < 7)
+                                                            {
+                                                                int lineNumberSymptom2 = 2;
+                                                                for (int i = 1; i < lineNumberSymptom2; i++)
+                                                                {
+                                                                    SetSymptom2(inputFile.ReadLine());
+                                                                    symptomProgress++;
+                                                                }
+
+                                                                if (symptomProgress < 7)
+                                                                {
+                                                                    int lineNumberSymptom3 = 2;
+                                                                    for (int i = 1; i < lineNumberSymptom3; i++)
+                                                                    {
+                                                                        SetSymptom3(inputFile.ReadLine());
+                                                                        symptomProgress++;
+                                                                    }
+
+                                                                    if (symptomProgress < 7)
+                                                                    {
+                                                                        int lineNumberSymptom4 = 2;
+                                                                        for (int i = 1; i < lineNumberSymptom4; i++)
+                                                                        {
+                                                                            SetSymptom4(inputFile.ReadLine());
+                                                                            symptomProgress++;
+                                                                        }
+
+                                                                        if (symptomProgress < 7)
+                                                                        {
+                                                                            int lineNumberSymptom5 = 2;
+                                                                            for (int i = 1; i < lineNumberSymptom5; i++)
+                                                                            {
+                                                                                SetSymptom5(inputFile.ReadLine());
+                                                                                symptomProgress++;
+                                                                            }
+
+                                                                            if (symptomProgress < 8)
+                                                                            {
+                                                                                int lineNumberSymptom6 = 2;
+                                                                                for (int i = 1; i < lineNumberSymptom6; i++)
+                                                                                {
+                                                                                    SetSymptom6(inputFile.ReadLine());
+                                                                                    symptomProgress++;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     }
                                                 }
                                             }
                                         }
+
                                     }
                                 }
-                             
                             }
+
+
+
+
+                            secondForm.Show();
                         }
                     }
-                    
-                    secondForm.Show();
                 }
+
             }
         }
-
     }
 }

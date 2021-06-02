@@ -48,8 +48,12 @@ namespace Contact_Tracing_App
             this.txtBoxMidName = new System.Windows.Forms.TextBox();
             this.txtBoxLastName = new System.Windows.Forms.TextBox();
             this.txtBoxFirstName = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.txtBoxSymptom1 = new System.Windows.Forms.TextBox();
+            this.txtBoxSymptom4 = new System.Windows.Forms.TextBox();
+            this.txtBoxSymptom5 = new System.Windows.Forms.TextBox();
+            this.txtBoxSymptom2 = new System.Windows.Forms.TextBox();
+            this.txtBoxSymptom6 = new System.Windows.Forms.TextBox();
+            this.txtBoxSymptom3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelQuestion
@@ -223,33 +227,71 @@ namespace Contact_Tracing_App
             this.txtBoxFirstName.Size = new System.Drawing.Size(125, 23);
             this.txtBoxFirstName.TabIndex = 128;
             // 
-            // textBox1
+            // txtBoxSymptom1
             // 
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBox1.Location = new System.Drawing.Point(12, 257);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(305, 80);
-            this.textBox1.TabIndex = 141;
+            this.txtBoxSymptom1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtBoxSymptom1.Location = new System.Drawing.Point(12, 257);
+            this.txtBoxSymptom1.Name = "txtBoxSymptom1";
+            this.txtBoxSymptom1.ReadOnly = true;
+            this.txtBoxSymptom1.Size = new System.Drawing.Size(189, 23);
+            this.txtBoxSymptom1.TabIndex = 141;
             // 
-            // btnBack
+            // txtBoxSymptom4
             // 
-            this.btnBack.Location = new System.Drawing.Point(324, 315);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 23);
-            this.btnBack.TabIndex = 138;
-            this.btnBack.TabStop = false;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.txtBoxSymptom4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtBoxSymptom4.Location = new System.Drawing.Point(210, 257);
+            this.txtBoxSymptom4.Name = "txtBoxSymptom4";
+            this.txtBoxSymptom4.ReadOnly = true;
+            this.txtBoxSymptom4.Size = new System.Drawing.Size(189, 23);
+            this.txtBoxSymptom4.TabIndex = 142;
+            // 
+            // txtBoxSymptom5
+            // 
+            this.txtBoxSymptom5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtBoxSymptom5.Location = new System.Drawing.Point(210, 286);
+            this.txtBoxSymptom5.Name = "txtBoxSymptom5";
+            this.txtBoxSymptom5.ReadOnly = true;
+            this.txtBoxSymptom5.Size = new System.Drawing.Size(189, 23);
+            this.txtBoxSymptom5.TabIndex = 144;
+            // 
+            // txtBoxSymptom2
+            // 
+            this.txtBoxSymptom2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtBoxSymptom2.Location = new System.Drawing.Point(12, 286);
+            this.txtBoxSymptom2.Name = "txtBoxSymptom2";
+            this.txtBoxSymptom2.ReadOnly = true;
+            this.txtBoxSymptom2.Size = new System.Drawing.Size(189, 23);
+            this.txtBoxSymptom2.TabIndex = 143;
+            // 
+            // txtBoxSymptom6
+            // 
+            this.txtBoxSymptom6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtBoxSymptom6.Location = new System.Drawing.Point(210, 314);
+            this.txtBoxSymptom6.Name = "txtBoxSymptom6";
+            this.txtBoxSymptom6.ReadOnly = true;
+            this.txtBoxSymptom6.Size = new System.Drawing.Size(189, 23);
+            this.txtBoxSymptom6.TabIndex = 146;
+            // 
+            // txtBoxSymptom3
+            // 
+            this.txtBoxSymptom3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtBoxSymptom3.Location = new System.Drawing.Point(12, 314);
+            this.txtBoxSymptom3.Name = "txtBoxSymptom3";
+            this.txtBoxSymptom3.ReadOnly = true;
+            this.txtBoxSymptom3.Size = new System.Drawing.Size(189, 23);
+            this.txtBoxSymptom3.TabIndex = 145;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 349);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.txtBoxSymptom6);
+            this.Controls.Add(this.txtBoxSymptom3);
+            this.Controls.Add(this.txtBoxSymptom5);
+            this.Controls.Add(this.txtBoxSymptom2);
+            this.Controls.Add(this.txtBoxSymptom4);
+            this.Controls.Add(this.txtBoxSymptom1);
             this.Controls.Add(this.labelQuestion);
             this.Controls.Add(this.labelDestination);
             this.Controls.Add(this.labelDate);
@@ -297,7 +339,11 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.TextBox txtBoxMidName;
         private System.Windows.Forms.TextBox txtBoxLastName;
         private System.Windows.Forms.TextBox txtBoxFirstName;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.TextBox txtBoxSymptom1;
+        private System.Windows.Forms.TextBox txtBoxSymptom4;
+        private System.Windows.Forms.TextBox txtBoxSymptom5;
+        private System.Windows.Forms.TextBox txtBoxSymptom2;
+        private System.Windows.Forms.TextBox txtBoxSymptom6;
+        private System.Windows.Forms.TextBox txtBoxSymptom3;
     }
 }

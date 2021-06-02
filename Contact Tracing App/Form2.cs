@@ -29,6 +29,13 @@ namespace Contact_Tracing_App
             txtBoxDate.Text = ContactTracing.Date;
             txtBoxContactNum.Text = ContactTracing.ContactNumber;
             txtBoxDestination.Text = ContactTracing.Destination;
+            txtBoxSymptom1.Text = ContactTracing.Symptom1;
+            txtBoxSymptom2.Text = ContactTracing.Symptom2;
+            txtBoxSymptom3.Text = ContactTracing.Symptom3;
+            txtBoxSymptom4.Text = ContactTracing.Symptom4;
+            txtBoxSymptom5.Text = ContactTracing.Symptom5;
+            txtBoxSymptom6.Text = ContactTracing.Symptom6;
+
         }
     }
 }
