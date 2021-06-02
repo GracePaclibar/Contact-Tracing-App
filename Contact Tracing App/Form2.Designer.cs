@@ -219,6 +219,7 @@ namespace Contact_Tracing_App
             this.txtBoxFirstName.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBoxFirstName.Location = new System.Drawing.Point(12, 27);
             this.txtBoxFirstName.Name = "txtBoxFirstName";
+            this.txtBoxFirstName.ReadOnly = true;
             this.txtBoxFirstName.Size = new System.Drawing.Size(125, 23);
             this.txtBoxFirstName.TabIndex = 128;
             // 
@@ -270,6 +271,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.txtBoxFirstName);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

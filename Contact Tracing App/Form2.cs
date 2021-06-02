@@ -17,5 +17,13 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
+
+        public static string FirstName = "";
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+            txtBoxFirstName.Text = ContactTracing.FirstName;
+        }
     }
 }

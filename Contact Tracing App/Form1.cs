@@ -31,23 +31,40 @@ namespace Contact_Tracing_App
             StreamWriter outputFile;
             outputFile = File.AppendText(@"C:\Users\Public\Documents\Contact Tracing Data\" + LastName + "_" + FirstName + ".txt");
             outputFile.WriteLine("Personal Information:");
-            outputFile.WriteLine("First Name:\t" + txtBoxFirstName.Text);
-            outputFile.WriteLine("Middle Name:\t" + txtBoxMidName.Text);
-            outputFile.WriteLine("Last Name:\t" + txtBoxLastName.Text);
-            outputFile.WriteLine("Address:\t" + txtBoxAddress.Text);
-            outputFile.WriteLine("Age:\t\t" + txtBoxAge.Text);
-            outputFile.WriteLine("Sex:\t\t" + txtBoxSex.Text);
-            outputFile.WriteLine("Date:\t\t" + txtBoxDate.Text);
-            outputFile.WriteLine("Contact Number:\t" + txtBoxContactNum.Text);
-            outputFile.WriteLine("Destination:\t" + txtBoxDestination.Text);
-            outputFile.WriteLine(" ");
+            outputFile.WriteLine("==============================");
+            outputFile.WriteLine("First Name:");
+            outputFile.WriteLine(txtBoxFirstName.Text);
+            outputFile.WriteLine("Middle Name:");
+            outputFile.WriteLine(txtBoxMidName.Text);
+            outputFile.WriteLine("");
+            outputFile.WriteLine("Last Name:");
+            outputFile.WriteLine(txtBoxLastName.Text);
+            outputFile.WriteLine("");
+            outputFile.WriteLine("Address:");
+            outputFile.WriteLine(txtBoxAddress.Text);
+            outputFile.WriteLine("");
+            outputFile.WriteLine("Age:");
+            outputFile.WriteLine(txtBoxAge.Text);
+            outputFile.WriteLine("");
+            outputFile.WriteLine("Sex:");
+            outputFile.WriteLine(txtBoxSex.Text);
+            outputFile.WriteLine("");
+            outputFile.WriteLine("Date:");
+            outputFile.WriteLine(txtBoxDate.Text);
+            outputFile.WriteLine("");
+            outputFile.WriteLine("Contact Number:");
+            outputFile.WriteLine(txtBoxContactNum.Text);
+            outputFile.WriteLine("");
+            outputFile.WriteLine("Destination:");
+            outputFile.WriteLine(txtBoxDestination.Text);
+            outputFile.WriteLine("==============================");
             outputFile.WriteLine("Symptoms:");
             
             foreach(Control symptom in panel1.Controls)
             {
                 if((symptom is CheckBox) && ((CheckBox)symptom).Checked)
                 {
-                    outputFile.WriteLine("\t\t" + symptom.Text);
+                    outputFile.WriteLine(symptom.Text);
                 }
             }
             outputFile.Close();
@@ -73,21 +90,41 @@ namespace Contact_Tracing_App
             chkBoxDiarrhea.Checked = false;
         }
 
+        public static string FirstName = "";
+
         Form2 secondForm = new Form2();
 
-        private void btnOpen_Click(object sender, EventArgs e)
+        private void ValueForFirstName(string text)
         {
-            var filePath = string.Empty;
+            FirstName = text;
+        }
+
+        public void btnOpen_Click(object sender, EventArgs e)
+        {
+
             using(OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.InitialDirectory = @"C:\Users\Public\Documents\Contact Tracing Data";
                 openFileDialog.DefaultExt = "txt";
-                filePath = openFileDialog.FileName;
-                if(openFileDialog.ShowDialog() == DialogResult.OK)
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    secondForm.Show();
+                    StreamReader inputFile;
+                    inputFile = File.OpenText(openFileDialog.FileName);
+
+                    if (Form2.FirstName == "")
+                    {
+                        int lineNumber = 5;
+                        for (int i = 1; i < lineNumber; i++)
+                        {
+                            ValueForFirstName(inputFile.ReadLine());
+                        }
+                    }
+
+                 secondForm.Show();
                 }
             }
         }
+
     }
 }
