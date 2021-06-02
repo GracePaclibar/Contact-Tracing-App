@@ -33,6 +33,7 @@ namespace Contact_Tracing_App
         {
             txtBoxFirstName.Text = ContactTracing.FirstName;
             txtBoxMidName.Text = ContactTracing.MidName;
+            txtBoxLastName.Text = ContactTracing.LastName;
         }
     }
 }

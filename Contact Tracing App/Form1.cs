@@ -113,6 +113,11 @@ namespace Contact_Tracing_App
             MidName = text;
         }
 
+        private void SetLastName(string text)
+        {
+            LastName = text;
+        }
+
         public void btnOpen_Click(object sender, EventArgs e)
         {
 
@@ -130,8 +135,8 @@ namespace Contact_Tracing_App
 
                     if (progress < 10)
                     {
-                        int lineNumber = 5;
-                        for (int i = 1; i < lineNumber; i++)
+                        int lineNumberFirst = 5;
+                        for (int i = 1; i < lineNumberFirst; i++)
                         {
                             SetFirstName(inputFile.ReadLine());
                             progress = progress++;
@@ -139,11 +144,22 @@ namespace Contact_Tracing_App
 
                         if (progress < 10)
                         {
-                            int lineNumber2 = 4;
-                            for (int i = 1; i < lineNumber2; i++)
+                            int lineNumberMid = 4;
+                            for (int i = 1; i < lineNumberMid; i++)
                             {
                                 SetMidName(inputFile.ReadLine());
                                 progress = progress++;
+                            }
+
+                            if (progress < 10)
+                            {
+                                int lineNumberLast = 4;
+                                for (int i = 1; i < lineNumberLast; i++)
+                                {
+                                    SetLastName(inputFile.ReadLine());
+                                    progress = progress++;
+                                }
+                             
                             }
                         }
                     }
