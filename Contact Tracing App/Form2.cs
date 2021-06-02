@@ -18,22 +18,12 @@ namespace Contact_Tracing_App
             InitializeComponent();
         }
 
-        public static string FirstName = "";
-        public static string MidName = "";
-        public static string LastName = "";
-        public static string Address = "";
-        public static string Age = "";
-        public static string Sex = "";
-        public static string Date = "";
-        public static string ContactNumber = "";
-        public static string Destination = "";
-
-
         private void Form2_Load(object sender, EventArgs e)
         {
             txtBoxFirstName.Text = ContactTracing.FirstName;
             txtBoxMidName.Text = ContactTracing.MidName;
             txtBoxLastName.Text = ContactTracing.LastName;
+            txtBoxAddress.Text = ContactTracing.Address;
         }
     }
 }

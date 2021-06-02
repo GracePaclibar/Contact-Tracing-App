@@ -118,6 +118,11 @@ namespace Contact_Tracing_App
             LastName = text;
         }
 
+        private void SetAddress(string text)
+        {
+            Address = text;
+        }
+
         public void btnOpen_Click(object sender, EventArgs e)
         {
 
@@ -158,6 +163,16 @@ namespace Contact_Tracing_App
                                 {
                                     SetLastName(inputFile.ReadLine());
                                     progress = progress++;
+                                }
+
+                                if (progress < 10)
+                                {
+                                    int lineNumberAddy = 4;
+                                    for (int i = 1; i < lineNumberAddy; i++)
+                                    {
+                                        SetAddress(inputFile.ReadLine());
+                                        progress = progress++;
+                                    }
                                 }
                              
                             }
